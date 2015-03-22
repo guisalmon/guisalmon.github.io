@@ -1065,9 +1065,9 @@
 			border-top: 0;
 		}
 
-/* One */
+/* Experience */
 
-	#one:before {
+	#experience:before {
 		background-image: url("../images/banner.jpg");
 		background-position: top right;
 		background-repeat: no-repeat;
