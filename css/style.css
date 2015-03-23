@@ -1111,3 +1111,41 @@
 				#footer .copyright li a {
 					color: inherit;
 				}
+
+    #footer .feature-icons {
+			list-style: none;
+			padding-left: 0;
+		}
+
+			#footer .feature-icons li {
+				text-decoration: none;
+                font-size: 0.75em;
+				display: inline-block;
+				margin: 0 0 1.6875em 0;
+				padding: 0 0 0 2.5em;
+				position: relative;
+				width: 100%;
+			}
+
+				#footer .feature-icons li:before {
+					-moz-osx-font-smoothing: grayscale;
+					-webkit-font-smoothing: antialiased;
+					font-family: FontAwesome;
+					font-style: normal;
+					font-weight: normal
+					text-transform: none !important;
+				}
+
+				#footer .feature-icons li:before {
+					background: #888888;
+					border-radius: 50%;
+					color: #ffffff;
+					display: block;
+					height: 2em;
+					left: 0;
+					line-height: 2em;
+					position: absolute;
+					text-align: center;
+					top: 0;
+					width: 2em;
+				}
