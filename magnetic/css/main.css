@@ -350,16 +350,16 @@ h5, h6          { font-weight: bolder }
 /*  Inner Page  */
 .top{
     width: 100%;
-    height: 350px;
+    height: 70px;
     overflow: hidden;
     display: block;
     position: relative;
-    background: url('../img/hero_image.jpg') no-repeat;
+    /*background: url('../img/hero_image.jpg') no-repeat;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-position: 50% 50%;
+    background-position: 50% 50%;*/
 }
 
 .work_nav{
@@ -369,6 +369,7 @@ h5, h6          { font-weight: bolder }
 
 .work_nav .btn{
     float: right;
+    width: 100%;
 }
 
 .work_nav ul{
@@ -384,8 +385,8 @@ h5, h6          { font-weight: bolder }
 
 .work_nav a{
     display: block;
-    width: 40px;
-    height: 40px;
+    width: 70px;
+    height: 70px;
     background: url('../img/p_navigation.png') no-repeat;
     background-position: 0 0;
 }
@@ -395,16 +396,17 @@ h5, h6          { font-weight: bolder }
 }
 
 .work_nav a.grid{
-    background-position: -41px 0;
+    background-position: -71px 0;
 }
 
 .work_nav a.next{
-    background-position: -82px 0;
+    background-position: -142px 0;
 }
 
 .top .title{
     display: block;
-    width: 100%;color: #4b4848;
+    width: 100%;
+    color: #4b4848;
     font-family: "raleway-bold", arial;
     font-size: 26px;
     font-weight: bold;
