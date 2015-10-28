@@ -15,7 +15,7 @@ done
 for f in $ports
 do
     echo $f
-    mogrify -resize 1920x1280! $f
+    mogrify -resize 1280x1920! $f
 done
 
 
