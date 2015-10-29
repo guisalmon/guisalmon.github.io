@@ -1,7 +1,7 @@
 jQuery(function($){
 
-	var longitude = 45.124099;
-	var latitude = -123.113634;
+	var longitude = 50.071520;
+	var latitude = 14.447181;
 	var canvas = "map";
 
 	
@@ -42,7 +42,7 @@ jQuery(function($){
 			  }
 			];	
 			var infowindow = new google.maps.InfoWindow({
-				content:"<div class='map_adresse'><div class='map_address'><span class='address'>Address : </span>1401 South Grand Avenue Los Angeles, CA 90015</div> <div class='map_tel'><span class='tel'>Phone : </span>(213) 748-2411</div></div>"
+				content:"<div class='map_adresse'><div class='map_address'><span class='address'>Address : </span>Krymská 2, 10100 Prague, Czech Republic</div> <div class='map_tel'><span class='tel'>Phone : </span>(213) 748-2411</div></div>"
 			});	
 			
 			map.setOptions({styles: styles});
