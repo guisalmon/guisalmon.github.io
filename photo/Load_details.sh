@@ -18,6 +18,8 @@ title=$(head -n 1 $titleFile)
 
 cp $template $file
 
+sed -i "s@_title_@$title@g" $file
+
 htmlTemplate="<div class=\"work\">\n\t\t\t<a href=\"_photo_\">\n\t\t\t\t<img src=\"_thumb_\" class=\"media\" alt=\"\"/>\n\t\t\t\t<div class=\"caption\">\n\t\t\t\t\t<div class=\"work_title\">\n\t\t\t\t\t\t<h1>_title_</h1>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</a>\n\t\t</div>\n"
 
 portPhotos="$dir/Port*"
@@ -30,10 +32,10 @@ for f in $portPhotos
 do
     if [ ${f: -4} == ".png" ] || [ ${f: -4} == ".jpg" ]
     then
-        #echo "Processing $f..."
+        echo "Processing $f..."
         if [ $cur != "none" ]
         then
-            ./Load_photo.sh $next $cur $f $file
+            ./Load_photo.sh $next $cur $f $file $titleFile
             next=$cur
         fi
         
@@ -59,10 +61,10 @@ do
     then
         if [[ "$f" != $portPhotos ]] && [ "$f" != $thumb ]
         then
-            #echo "Processing $f..."
+            echo "Processing $f..."
             if [ $cur != "none" ]
             then
-                ./Load_photo.sh $next $cur $f $file
+                ./Load_photo.sh $next $cur $f $file $titleFile
                 next=$cur
             fi
             cur=$f
@@ -80,7 +82,7 @@ do
     fi
 done
 
-./Load_photo.sh $next $cur "none" $file
+./Load_photo.sh $next $cur "none" $file $titleFile
 
 echo $title
 

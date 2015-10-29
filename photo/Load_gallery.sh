@@ -11,7 +11,7 @@ dir="img/photos/$1"
 thumb="$dir/thumb.jpg"
 titleFile="$dir/title"
 
-./Load_details.sh $1 > /dev/null
+./Load_details.sh $1
 
 htmlTemplate="<div class=\"work\">\n\t\t\t<a href=\"_href_\">\n\t\t\t\t<img src=\"_thumb_\" class=\"media\" alt=\"\"/>\n\t\t\t\t<div class=\"caption\">\n\t\t\t\t\t<div class=\"work_title\">\n\t\t\t\t\t\t<h1>_title_</h1>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</a>\n\t\t</div>\n"
 
