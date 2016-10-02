@@ -195,7 +195,6 @@
 
 	header.major h2 {
         color: #c0392b;
-		#color: #4acaa8;
 		font-size: 3.5em;
 	}
 
@@ -1083,6 +1082,19 @@
 
     .flagfr:hover {
         background-image: url(../images/flagcolor.png);
+        transition: all 500ms ease;
+    }
+
+    .flagen {
+        height: 1em;
+        width: 1.5em;
+        background-image: url(../images/flagen.png);
+        background-size: 1.5em 1em;
+        align-content: center;
+    }
+
+    .flagen:hover {
+        background-image: url(../images/flagencolor.png);
         transition: all 500ms ease;
     }
 
