@@ -340,7 +340,7 @@ h5, h6          { font-weight: bolder }
 
 
 .main .work a:hover .caption{
-    opacity: 1;
+    opacity: 0.75;
 }
 
 

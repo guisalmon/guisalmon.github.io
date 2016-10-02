@@ -2,6 +2,7 @@
 
 if [ $# -ne 5 ]
 then
+    echo "Used $0 $1 $2 $3 $4"
     echo -e "Usage: \n $0 PREV_PIC_NAME PIC_NAME NEXT_PIC_NAME TITLE"
     exit
 fi
