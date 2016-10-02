@@ -1072,6 +1072,20 @@
 			border-top: 0;
 		}
 
+/* Flag */
+    .flagfr {
+        height: 1em;
+        width: 1.5em;
+        background-image: url(../images/flag.png);
+        background-size: 1.5em 1em;
+        align-content: center;
+    }
+
+    .flagfr:hover {
+        background-image: url(../images/flagcolor.png);
+        transition: all 500ms ease;
+    }
+
 /* Me */
 
 	#me:before {
